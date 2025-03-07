@@ -1,0 +1,131 @@
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Regular.ttf') format('truetype');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Italic.ttf') format('truetype');font-weight: normal;font-style: italic;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Bold.ttf') format('truetype');font-weight: bold;font-style: normal;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-BoldItalic.ttf') format('truetype');font-weight: bold;font-style: italic;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Light.ttf') format('truetype');font-weight: 300;font-style: normal;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-LightItalic.ttf') format('truetype');font-weight: 300;font-style: italic;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Black.ttf') format('truetype');font-weight: 900;font-style: normal;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-BlackItalic.ttf') format('truetype');font-weight: 900;font-style: italic;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Medium.ttf') format('truetype');font-weight: 500;font-style: normal;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-MediumItalic.ttf') format('truetype');font-weight: 500;font-style: italic;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-Thin.ttf') format('truetype');font-weight: 100;font-style: normal;}
+@font-face {font-family: 'Roboto';src: url('./assets/Roboto-ThinItalic.ttf') format('truetype');font-weight: 100;font-style: italic;}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  /* text-align: center; */
+  text-justify: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+html, body { overflow: hidden; }
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  position: relative;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: #3b3b3b;
+}
+
+.camera {
+  display: flex;
+  width: 550px;
+  min-width: 550px;
+  height: 300px;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera img {
+  width: 550px;
+  min-width: 550px;
+  max-width: 550px;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+.dataBox {
+  position: relative;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  text-align: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 900px;
+}
+
+.dataBox span:first-child { color: red; }
+.data { margin-top: 15px; }
+.border { position: absolute; bottom: -25px; border: solid 2px gray; border-radius: 2px; width: 50px; height: 1px; }
+.dataBoxBox {
+  flex-direction: column;
+  text-align: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dataBoxBox button {
+  position: relative;
+  margin-top: 100px;
+  background-color: gray;
+  border: none;
+  border-radius: 25px;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.dataBoxBox button:hover { background-color: rgb(80, 80, 80); }
+.dataBoxBox button:active { background-color: rgb(48, 48, 48); }
+
+.console {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 600px;
+  height: 350px;
+  right: 0;
+  bottom: 50px;
+  padding: 10px;
+}
+
+.console span:first-child {
+  color: green;
+  font-weight: 600;
+}
+
+.map {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 600px;
+  height: 350px;
+  left: 10px;
+  bottom: 50px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

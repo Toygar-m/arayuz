@@ -1,0 +1,17 @@
+{
+    "name": "windows12ultrapromax",
+    "title": "Jeek Windows 12 Ultra Pro Max OS",
+    "version": "1.0.1",
+    "icon": "./jeek.ico",
+    "logo": "jeek.logo",
+    "via": "JeekSoft",
+    "build": {
+        "mode": "development",
+        "path": ".",
+        "jsfilein": "./jeek.jsx",
+        "jsfileout": "./app.js",
+        "cssfilein": "jeek.css",
+        "cssfileout": "app.css"
+    }
+
+}
